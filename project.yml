@@ -1,0 +1,7 @@
+packages:
+  - name: general
+    actions:
+      - name: shaastra
+        limits:
+          timeout: 5000
+          memory: 256

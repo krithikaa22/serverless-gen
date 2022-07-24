@@ -1,0 +1,205 @@
+.shows .dark
+{
+    background-color: #fee9e1;
+}
+.shows .light, .shows-info.light
+{
+    background-color: #0e101bc9;
+    color: #fee9e1;
+}
+
+.shows-info.light
+{
+    background-color: #0e101b96;
+    box-shadow: 0 0 50px 10px #0e101b75;
+}
+
+.shows-info.dark
+{
+    background-color: rgba(255, 255, 255, 0.356);
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.452);
+}
+
+.vertical-timeline-element--work:first-child
+{
+    margin-top: 10vh !important;
+}
+.vertical-timeline-element--work:last-child
+{
+    margin-bottom: 10vh !important;
+}
+.vertical-timeline-element--work h3 
+{
+    font-size: 3vw;
+    font-weight: bold;
+}
+.vertical-timeline-element--work p
+{
+    font-weight: 300 !important;
+    font-size: 1.5vw !important;
+    margin-bottom: 0%;
+    padding: 0%;
+    margin-top: 0% !important;
+}
+.shows-main .vertical-timeline-element--work p:hover 
+{
+    color: rgb(61, 110, 119);
+    letter-spacing: 5px;
+    transition: all 1s ease-in-out;
+}
+.shows-main
+{
+    position: relative;
+}
+.shows-main b 
+{
+    color: rgb(64, 62, 83);
+}
+
+.shows-main::before
+{
+    background-image: url("../../images/night/shows-bg.jpg");
+    background-position: -400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    content: "";
+    width: 100%;
+    top: 0%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+@keyframes left{
+    0%{
+       width: 0%;
+    }
+    25%
+    {
+        width: 50%;
+    }
+    50%
+    {
+        width: 100%;
+    }
+    75%{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .shows .chakra-heading
+    {
+        font-size: 8vw !important;
+    }
+    .shows-info
+    {
+        width: 80vw !important;
+        padding: 4vh !important;
+    }
+    .shows-image
+    {
+        width: 80vw !important;
+    }
+    .vertical-timeline
+    {
+        width: 80vw !important;
+        padding-top: 0% !important;
+        padding-bottom: 0% !important;
+    }
+    .vertical-timeline-element--work:last-child
+    {
+        margin-bottom: 5vh !important;
+    }
+    .vertical-timeline-element--work p
+    {
+        text-align: center;
+        font-size: 2vw !important;
+    }
+    .vertical-timeline-element--work h3
+    {
+        font-size: 5vw !important;
+        text-align: center;
+        margin-bottom: 3vh !important;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .shows-image img 
+    {
+        border: none !important;
+        border-radius: 0%;
+        object-fit: cover;   
+        width: 100vw !important;
+        height: 50vw !important;
+    }
+    .shows-image
+    {
+        width: 100vw !important;
+        /* margin: 0% !important; */
+        flex-direction: column !important;
+    }
+    .shows-info
+    {
+        width: 100vw !important;
+        font-size: 5vw !important;
+    }
+    .shows .chakra-heading
+    {
+        font-size: 12vw !important;
+    }
+    .shows-main .vertical-timeline
+    {
+        width: 95vw !important;
+    }
+    .shows-main .vertical-timeline-element--work p
+    {
+        font-size: 7vw !important;
+    }
+    .shows-main .vertical-timeline-element--work h3
+    {
+        font-size: 6vw !important;
+    }
+    .shows-main .vertical-timeline-element-icon, .shows-main .vertical-timeline::before, .shows-main .vertical-timeline-element-content-arrow
+    {
+        display: none;
+    }
+    .shows-main .vertical-timeline-element-content 
+    {
+        margin-left: 0%;
+        margin: auto;
+    }
+}
+
+
+.background-gradient {
+	background: linear-gradient(-45deg, #2C5364, #203A43, #0F2027);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	/* height: 100vh; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+/* .background-gradient{
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027); 
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); 
+} * */

@@ -1,0 +1,354 @@
+/* she can */
+#she-can .dblue {
+  color: var(--dblue);
+}
+#she-can .dblue:hover {
+  color: var(--dblue-bg);
+}
+.she-can,
+.blink,
+#past {
+  height: fit-content !important;
+  width: fit-content !important;
+  margin: auto !important;
+  padding: 0% !important;
+}
+.she-can-intro {
+  position: relative;
+  display: flex;
+  padding: 10rem 8rem;
+  padding-top: 2rem;
+  padding-right: 0;
+  margin: 1rem 4rem;
+  justify-content: space-between;
+}
+.she-can-heading {
+  color: var(--green);
+  font-family: "Paytone One", sans-serif;
+  transition: all 0.6s ease-out;
+  font-size: 9.9vw;
+  letter-spacing: 10px;
+  transform: translateY(20%);
+}
+.she-can-heading:hover {
+  line-height: 15vw;
+  letter-spacing: 25px;
+  color: var(--pink);
+}
+.she-can-heading-hover-light {
+  line-height: 14rem;
+  letter-spacing: 25px;
+  color: var(--brown);
+}
+
+.she-can-logo {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.wrap {
+  width: 60%;
+  position: relative;
+  z-index: 4;
+}
+.she-can-intro-info {
+  width: 90%;
+  z-index: 2;
+  background-color: var(--pink-bg);
+  color: var(--brown);
+  font-weight: 500;
+  padding: 4rem;
+  text-align: right;
+  margin: auto;
+}
+.she-can-backdiv {
+  position: absolute;
+  z-index: -1;
+  left: 5%;
+  background-color: var(--green);
+  height: 100%;
+  width: 90%;
+}
+.bgdblue {
+  background-color: var(--dblue-bg);
+}
+.wrap-image {
+  position: relative;
+  margin: auto;
+  width: 70%;
+}
+.darkblue {
+  background-color: var(--dblue);
+}
+.green {
+  background-color: var(--green);
+}
+.she-can-backdiv-image {
+  position: absolute;
+  opacity: 0.8;
+  z-index: -1;
+  background-color: var(--pink);
+  height: 100%;
+  width: 100%;
+}
+
+#she-can-image {
+  height: 100%;
+  width: 100%;
+}
+.she-can-recog {
+  padding: 1rem;
+  /* background-image: url("../../images/socialEndeavours/recogBg2.jpg"); */
+  /* background-color: #e4e4e4c5; */
+  background-color: #fee9e198;
+  /* background-image: linear-gradient(60deg, var(--blue-bg2), var(--green));
+    border-radius: 24px; */
+  margin: 0;
+  padding: 3rem;
+  margin-top: 10rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#darkblue {
+  color: var(--pink);
+}
+.recog-heading {
+  color: var(--dblue);
+  width: 90%;
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  padding: 0 2rem;
+  /* margin: 2rem auto; */
+  margin-bottom: 0;
+}
+@keyframes headslide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes headslideRev {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.recog-info {
+  color: var(--dblue);
+  width: 100%;
+  /* margin: 2rem auto; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  overflow-x: hidden;
+}
+.recog-info-child {
+  padding: 2vw;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.moe {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.two {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.link-she-can a:hover {
+  color: var(--blue-bg);
+}
+
+@media screen and (max-width: 1100px) {
+  .she-can-heading {
+    font-size: 15vw;
+  }
+  .title {
+    font-size: 5vw;
+  }
+  .info {
+    font-size: 3vw;
+  }
+  .moe {
+    flex-direction: column;
+  }
+  .recog-info {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+  }
+  .recog-info-child:nth-child(2) {
+    width: 80%;
+  }
+  .she-can-intro {
+    margin: 5rem 0;
+    margin-bottom: 0;
+  }
+  .she-can-intro {
+    flex-direction: column;
+    padding: 0%;
+    row-gap: 8rem;
+    margin: 15vw auto;
+    margin-top: 5vw;
+    align-items: center;
+  }
+  .she-can-intro-info {
+    font-size: 2vw;
+  }
+  #she-can-grid {
+    font-size: 2.5vw;
+    padding: 4vw;
+  }
+}
+/* @media screen and (max-width: 600px)
+{
+    .she-can-intro{
+        padding: 0%;
+        flex-direction: column;
+        row-gap: 8rem;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .she-can-intro-info{
+        padding: 2rem;
+    }
+    .she-can-heading{
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+    .she-can-recog{
+        padding: 1vw;
+    }
+    .recog-info{
+        font-weight: bold;
+    }
+    .recog-info-child{
+        width: 100%;
+    }
+    .title{
+        font-size: 15px;
+    }
+} */
+@media screen and (max-width: 800px) {
+  .she-can {
+    margin: 0%;
+    margin-top: 8vw;
+  }
+  .she-can-intro {
+    padding: 0%;
+    flex-direction: column;
+    row-gap: 8rem;
+    /* margin: 0 auto; */
+    margin: 0;
+    align-items: center;
+  }
+  .wrap {
+    width: 100%;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .recog-heading {
+    margin: 0;
+    font-size: 3rem;
+  }
+  .she-can-heading {
+    font-size: 25vw;
+    line-height: 25vw;
+  }
+  .she-can-heading:hover {
+    line-height: 30vw;
+    letter-spacing: 3vw;
+  }
+  #she-can-grid {
+    font-size: 4vw;
+    padding: 4vw;
+    font-weight: bold;
+  }
+  .she-can-intro-info {
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+    margin: 0%;
+    /* padding: 2rem; */
+    padding: 15vw 8vw;
+  }
+  .she-can-backdiv {
+    width: 100%;
+  }
+  .she-can-recog {
+    padding: 1vw;
+    margin: 18vw 0;
+    margin-bottom: 5vw;
+  }
+  .recog-heading {
+    margin: 5vw auto;
+    padding: 0%;
+    font-size: 12vw;
+    /* text-align: center; */
+  }
+  .recog-info-child {
+    width: 100%;
+  }
+  .recog-info-child .title {
+    font-size: 8vw;
+  }
+  .recog-info {
+    margin-bottom: 0vw;
+    font-weight: bold;
+  }
+  .link-she-can {
+    width: 80vw;
+    margin: auto;
+    padding: 1rem;
+    font-size: 5vw;
+  }
+  .info {
+    font-size: 5vw;
+    padding: 0%;
+  }
+  .info p {
+    padding: 2vw;
+  }
+  .info p:nth-child(odd) {
+    font-size: 10vw;
+    line-height: 12vw;
+  }
+  .moe {
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-she-can a:hover {
+    line-height: 10vw;
+  }
+  .she-can-logo {
+    width: 100%;
+  }
+}
+/* @media screen and (max-width: 600px)
+{
+    .info{
+        padding: 0%;
+    }
+    .link-she-can a:hover{
+        line-height: 10vw;
+    }
+    .she-can-heading:hover{
+        line-height: 30vw;
+        letter-spacing: 3vw;
+    }
+    #she-can-grid{
+        font-size: 6vw;
+        padding: 4vw;
+    }
+} */

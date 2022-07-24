@@ -1,0 +1,183 @@
+/* .sections--container {
+} */
+
+/* .sections__section {
+    margin: 0;
+    padding-left: 2rem;
+}
+.sections__section:nth-of-type(2n) {
+    align-self: flex-end;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.root {
+    position: relative;
+    margin: 40px auto;
+    width: 20%;
+    border-radius: 4px;
+} */
+/* .root::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    background-color: white;
+    height: 20px;
+    transform: translateX(-7px);
+} */
+
+/* .wrapper--level__1 {
+    position: relative;
+    max-width: 99%;
+}
+.wrapper--level__1::before {
+    content: "";
+    position: absolute;
+    width: calc(66% + 16px);
+    height: 2px;
+    background-color: white;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tree--level__1 {
+    border-radius: 4px;
+    padding: 10px 0px;
+    position: relative;
+}
+.tree--level__1::before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: white;
+    transform: translateX(-1px);
+}
+.node {
+    transition: background 1s;
+}
+.node:hover {
+    transition: background 0.5s;
+    background: white;
+    color: black;
+}
+
+/* .projects {
+} */
+/* .projects > div > div > div {
+    width: 50%;
+}
+.projects > div:nth-of-type(2n) > div > div:nth-child(1) {
+    order: 2;
+    margin-left: 2rem;
+} */ 
+
+.sections__section {
+    margin: 0;
+    padding-left: 2rem;
+}
+.sections__section:nth-of-type(2n) {
+    align-self: flex-end;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.root {
+    position: relative;
+    margin: 40px auto;
+    width: 50%;
+    border-radius: 4px;
+}
+/* .root::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    background-color: white;
+    height: 20px;
+    transform: translateX(-7px);
+} */
+
+.wrapper--level__1 {
+    position: relative;
+    max-width: 99%;
+}
+.wrapper--level__1::before {
+    content: "";
+    position: absolute;
+    width: calc(66% + 16px);
+    height: 2px;
+
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tree--level__1 {
+    border-radius: 4px;
+    padding: 10px 0px;
+    position: relative;
+}
+.tree--level__1::before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    transform: translateX(-1px);
+}
+.node {
+    transition: background 1s;
+}
+.node:hover {
+    transition: background 0.5s;
+    background: white;
+    color: black;
+}
+
+.projects > div > div > div {
+    width: 50%;
+}
+.projects > div:nth-of-type(2n) > div > div:nth-child(1) {
+    order: 2;
+    margin-left: 2rem;
+}
+
+.h-eff:hover {
+    color: #01ab74;
+    transition: color 0.2s;
+}
+.h-eff {
+    transition: color 1s;
+}
+
+.captions {
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: #0801014d 1px 1px 4px, #55535363 -1px -1px 6px;
+    border-radius: 4px;
+}
+.captions:active {
+    box-shadow: inset #0801014d 1px 1px 4px, inset #55535363 -1px -1px 6px;
+}
+
+@media only screen and (max-width: 760px) {
+    .sections__section,
+    .sections__section:nth-of-type(2n) {
+        align-self: center;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .projects > div:nth-of-type(2n) > div > div:nth-child(1) {
+        order: -1;
+        margin-left: 0;
+    }
+}
+

@@ -1,0 +1,184 @@
+mutation createUser($CreateUserInput: CreateUserInput!) {
+  createUser(data: $CreateUserInput)
+}
+
+mutation verifyUser($otp: String!) {
+  verifyUser(otp: $otp)
+}
+
+mutation login($LoginInput: LoginInput!) {
+  login(data: $LoginInput) {
+    id
+    role
+    isVerified
+  }
+}
+
+mutation logoutUser {
+  logoutUser
+}
+
+mutation resendVerificationMail(
+  $requestForgotPassInput: RequestForgotPassInput!
+) {
+  resendVerificationMail(data: $requestForgotPassInput)
+}
+
+mutation resetPassword($resetPasswordInput: ResetPasswordInput!) {
+  resetPassword(data: $resetPasswordInput)
+}
+
+mutation register($EventID: String!, $referral: String) {
+  register(EventID: $EventID, referral: $referral) {
+    registered
+    eventPay {
+      orderId
+      amount
+      user {
+        name
+        email
+        mobile
+        address
+      }
+      event {
+        id
+        name
+      }
+    }
+  }
+}
+
+mutation ComboOffer(
+  $combo: String!
+  $workshopsIDs: [String!]
+  $TShirtsDetails: TShirtsDetails
+  $referral: String
+) {
+  ComboOffer(
+    combo: $combo
+    TShirtsDetails: $TShirtsDetails
+    workshopsIDs: $workshopsIDs
+    referral: $referral
+  ) {
+    eventPay {
+      orderId
+      amount
+      user {
+        name
+        email
+        mobile
+        address
+      }
+    }
+  }
+}
+
+mutation RegisterRecording($offerType: String!, $workshopsIDs: [String!]!,$TShirtsDetails: TShirtsDetails) {
+  registerRecording(offerType: $offerType, workshopsIDs: $workshopsIDs,TShirtsDetails: $TShirtsDetails) {
+    eventPay {
+      orderId
+      amount
+      user {
+        name
+        email
+        mobile
+        address
+      }
+    }
+  }
+}
+
+mutation updateEventPay(
+  $eventId: String!
+  $data: UpdateEventPayInput!
+  $referral: String
+) {
+  updateEventPay(EventId: $eventId, data: $data, referral: $referral)
+}
+
+mutation ComboupdateEventPay($data: UpdateEventPayInput!, $referral: String) {
+  ComboupdateEventPay(data: $data, referral: $referral)
+}
+
+mutation updateEventPay(
+  $eventId: String!
+  $data: UpdateEventPayInput!
+  $referral: String
+) {
+  updateEventPay(EventId: $eventId, data: $data, referral: $referral)
+}
+
+mutation ComboupdateEventPay($data: UpdateEventPayInput!, $referral: String) {
+  ComboupdateEventPay(data: $data, referral: $referral)
+}
+
+mutation UpdateRecordingPay($data: UpdateEventPayInput!) {
+  updateRecordingPay(data: $data)
+}
+
+mutation createTeamandRegister($createTeamAndRegisterData: CreateTeamInput!) {
+  createTeamAndRegister(data: $createTeamAndRegisterData)
+}
+
+mutation getPasswordOTP($email: String!) {
+  getPasswordOTP(email: $email)
+}
+
+mutation updateReferral($referralcode: String!) {
+  updateReferral(referralcode: $referralcode)
+}
+mutation addEvent($data: AddEventInput!) {
+  addEvent(data: $data) {
+    name
+    id
+  }
+}
+
+mutation editEvent($data: EditEventInput!, $id: String!) {
+  editEvent(data: $data, eventID: $id)
+}
+mutation deleteEvent($id: String!) {
+  deleteEvent(id: $id)
+}
+
+mutation editProfile($data: EditProfileInput!) {
+  editProfile(data: $data)
+}
+
+mutation createEventFAQ($data: CreateEventFAQInput!, $id: String!) {
+  createEventFAQ(data: $data, EventID: $id)
+}
+
+mutation editEventFAQ($data: EditEventFAQInput!, $id: String!) {
+  editEventFAQ(data: $data, EventFAQID: $id)
+}
+
+mutation deleteEventFAQ($id: String!) {
+  deleteEventFAQ(EventFAQID: $id)
+}
+
+mutation leaveTeam($id: String!) {
+  leaveTeam(data: $id)
+}
+
+mutation addTimings($id: String!, $data: AddTimingsInput!) {
+  addTimings(id: $id, data: $data)
+}
+
+mutation deleteTimings($id: String!) {
+  deleteTimings(id: $id)
+}
+
+mutation earlybidoffer($id: String!, $amount: String!) {
+  earlybidoffer(eventID: $id, amount: $amount)
+}
+
+mutation registerChess($data: registerBlitzChessInput!) {
+  registerChess(data: $data) {
+    orderId
+  }
+}
+
+mutation capturePaymentChess($input: CapturePaymentChessInput!) {
+  capturePaymentChess(Input: $input)
+}

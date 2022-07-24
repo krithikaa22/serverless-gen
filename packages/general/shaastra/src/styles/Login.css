@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.login 
+{
+    font-family: 'Roboto', sans-serif;
+}
+.login span 
+{
+    color: #2467a1;
+}
+.login
+{
+    backdrop-filter: blur(30px);
+    backdrop-filter: opacity(20%);
+}
+.login a:hover
+{
+    text-decoration: none;
+    letter-spacing: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.login ::placeholder
+{
+    color: white;
+}
+.blackG ::placeholder
+{
+    color: black !important;
+}
+/* .login-main-box input, .login-main-box select 
+{
+    background-color: rgba(255, 255, 255, 0.397) !important;
+    color: white !important;
+} */
+.login .blackG input, .login .blackG select
+{
+    background-color: white !important;
+    color: black !important;
+    background-image: unset;
+    border: 2px solid black;
+}
+
+.profile-main-flex .swiper, .profile-main-flex .swiper-container, .profile-main-flex .swiper-wrapper
+{
+    width: 55vw;
+    height: fit-content;
+}
+.profile-main-flex .swiper-slide
+{
+    border-radius: 10px;
+    background-color: #3d4363;
+    width: 20vw !important;
+    height: 20vw !important;
+}
+.profile-main-flex input, .profile-main-flex select
+{
+    background-color: white;
+    color: black !important;
+}
+
+
+.profile-button-flex ::placeholder,.profile-main-flex ::placeholder
+{
+    color: rgb(0, 0, 0) !important;
+}
+
+
+@media screen and (max-width: 900px)
+{
+    .profile-heading
+    {
+        font-size: 8vw !important;
+    }
+    .profile-main-flex
+    {
+        flex-direction: column !important;
+    }
+    .profile-main-flex .profile-image 
+    {
+        display: none;
+    }
+    .profile-main-flex .chakra-button 
+    {
+        width: fit-content;
+        font-size: 3vw;
+    }
+    .profile-main-flex > div:first-child
+    {
+        flex-direction: row !important;
+        align-items: center !important;
+        width: 100vw;
+        height: fit-content !important;
+        margin-bottom: 4vh;
+    }
+    .profile-main-flex > div:first-child a 
+    {
+        margin: auto;
+        font-size: 3vw;
+        margin-right: 10vw;
+    }
+    .profile-main-flex > div:last-child > div:first-child
+    {
+        width: 95vw;
+    }
+    .profile-main-flex .chakra-form-control, .profile-main-flex .chakra-form-control > div
+    {
+        margin-bottom: 2vh !important;
+    }
+    .profile-main-flex p, .profile-button-flex input, .profile-button-flex select 
+    {
+        font-size: 3vw !important;
+    }
+    .profile-main-flex > div 
+    {
+        margin: auto;
+    }
+
+    .login
+    {
+        padding: 0% !important;
+        padding-top: 10vh !important;
+    }
+    .login-main-box
+    {
+        width: 100vw !important;   
+        border-radius: unset !important;
+    }
+    .login-main-box .chakra-heading 
+    {
+        font-size: 15vw;
+    }
+    .login-image
+    {
+        display: none;
+        right: 15% !important;
+        width: 60vw !important;
+        height: auto !important;
+    }
+
+    .profile-main-flex .swiper, .profile-main-flex .swiper-container, .profile-main-flex .swiper-wrapper
+    {
+        width: 90vw;
+        height: fit-content;
+    }
+
+    .profile-main-flex .swiper-slide
+{
+    width: 90vw !important;
+    height: 50vw !important;
+}
+}
+
+@media screen and (max-width: 700px)
+{
+    .profile-main-flex > div:last-child > div:first-child
+    {
+        width: 95vw;
+    }
+    .profile-main-flex > div:first-child a 
+    {
+        margin-bottom: 0;
+        font-size: 5vw;
+        margin-right: 5vw;
+    }
+    .profile-heading
+    {
+        font-size: 10vw !important;
+        margin-top: 15vh;
+    }
+
+    .profile-main-flex .swiper, .profile-main-flex .swiper-container, .profile-main-flex .swiper-wrapper
+{
+    width: 90vw;
+    height: fit-content;
+}
+.profile-main-flex .swiper-slide
+{
+    width: 90vw !important;
+    height: fit-content !important;
+}
+}
+@media screen and (max-width: 300px)
+{
+   .profile-button-flex
+   {
+       flex-direction: column;
+   }
+}

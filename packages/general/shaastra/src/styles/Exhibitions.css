@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+.Title {
+  font-family: "Poppins", sans-serif;
+}
+
+.App-particles__container {
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 0;
+  }
+  .AboutUsContainer{
+    height:100vh;
+    padding: 20px;
+    text-align: justify;
+  }
+  .ECard{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align:center;
+  }
+
+  .overview {
+    padding: 13px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(100%);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.ECard:hover .cardtext {
+  visibility: hidden;
+}
+
+.ECard:hover .overview {
+  transform: translateY(0);
+  border-radius: 5px;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/* .slider{
+    position : relative;
+    height: 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+  }
+
+  .right-arrow{
+    position: absolute;
+    top: 47%;
+    right: 25%;
+    font-size: 2.5rem;
+    background-color:lightskyblue;    
+    border-radius: 100%;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .left-arrow{
+    position: absolute;
+    top: 47%;
+    left: 25%;
+    font-size: 2.5rem;
+    background-color:lightskyblue;
+    border-radius: 100%;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+  } */
+
+/* .slide{
+    opacity: 0;
+    transition-duration: 1s ease ;
+  }
+
+  .slide.active{
+    opacity:1;
+    transition-duration: 1s;
+    transform : scale(1.08);
+
+  } */
+
+/* .CarouselImg{
+
+    width: 300px;
+    height : 200px;
+  } */
+
+@media screen and (max-height: 100vh) {
+  .AboutUsContainer {
+    height: 100%;
+  }
+  /* .left-arrow{
+      position: absolute;
+      top: 47%;
+      left: 5%;
+      font-size: 2rem;
+      background-color:lightskyblue;
+      border-radius: 100%;
+      color : black;
+      z-index: 1;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .CarouselImg{
+
+      width: 300px;
+      height : 200px;
+    }
+  
+
+    .right-arrow{
+      position: absolute;
+      top: 47%;
+      right: 5%;
+      font-size: 2rem;
+      background-color:lightskyblue;    
+      border-radius: 100%;
+      color: black;
+      z-index: 1;
+      cursor: pointer;
+      user-select: none;
+    }
+   */
+}

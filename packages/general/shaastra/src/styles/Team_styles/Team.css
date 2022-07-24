@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;650;700&display=swap");
+.Team {
+  padding-bottom: 30px;
+}
+.Team .ContentBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 50px;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+.Team .ContentBox h1 {
+  font-size: 4em;
+  font-family: "Quicksand";
+  font-weight: 650;
+}
+.Team .ContentBox p {
+  max-width: 700px;
+}
+.Team .imageContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow-y: visible;
+  overflow-x: clip;
+  margin: 50px 0;
+}
+.Team .imageSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 415px;
+  display: flex;
+  animation: moveSlider 10s linear infinite;
+}
+.Team .imageContainer .imageSlider:hover {
+  animation-play-state: paused;
+}
+@keyframes moveSlider {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1200px;
+  }
+}
+.Team .imageSlider .col {
+  width: 140px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 -20px;
+  z-index: 0;
+}
+.Team .imageSlider .col:hover {
+  z-index: 2;
+}
+.Team .imageSlider .col:nth-of-type(even) {
+  transform: translateY(80px);
+}
+.Team .DetailCards {
+  width: calc(100% - 50px);
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 25px 0;
+  border-radius: 20px;
+}
+.Team .DetailCards.light {
+  background-color: #008080;
+}
+.Team .DetailCards.dark {
+  background-color: #3c3c3c;
+}
+.Team .FilterBtn {
+  display: none;
+}
+.Team .DetailCards .navbar {
+  width: 315px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 0.5s;
+}
+.Team .DetailCards.light .navbar {
+  background-color: #008080;
+}
+.Team .DetailCards.dark .navbar {
+  background-color: #3c3c3c;
+}
+.Team .DetailCards .navbar::before {
+  content: "";
+  width: 5px;
+  height: 598px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+.Team .DetailCards.light .navbar::before {
+  background-color: rgb(243, 243, 243);
+}
+.Team .DetailCards.dark .navbar::before {
+  background-color: #0e101b;
+}
+.Team .DetailCards .navbar button {
+  padding: 8px 0px;
+  margin: 3px 0;
+  padding-left: 15px;
+  width: 290px;
+  height: 40px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: left;
+  border-radius: 10px 0 0 10px;
+  z-index: 1;
+  transition: 0;
+  transition-delay: 0.4s;
+}
+.Team .DetailCards.dark .navbar button {
+  color: #fff !important;
+}
+.Team .DetailCards .navbar #marker {
+  position: absolute;
+  /* top: calc(44px + 0 * 46px); */
+  left: 25;
+  width: 290px;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+  z-index: 0;
+  transition: 0.5s cubic-bezier(1, -0.43, 0, 1.4);
+}
+.Team .DetailCards.light .navbar #marker {
+  background-color: rgb(243, 243, 243);
+}
+.Team .DetailCards.dark .navbar #marker {
+  background-color: #0e101b;
+}
+.Team .DetailCards .navbar #marker span {
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+.Team .DetailCards.light .navbar #marker span {
+  background-color: rgb(243, 243, 243);
+}
+.Team .DetailCards.dark .navbar #marker span {
+  background-color: #0e101b;
+}
+.Team .DetailCards .navbar #marker span::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  border-bottom-right-radius: 7px;
+}
+.Team .DetailCards.light .navbar #marker span::before {
+  background-color: #008080;
+}
+.Team .DetailCards.dark .navbar #marker span::before {
+  background-color: #3c3c3c;
+}
+.Team .DetailCards .navbar #marker span:nth-of-type(2) {
+  top: auto;
+  bottom: -10px;
+}
+.Team .DetailCards .navbar #marker span:nth-of-type(2)::before {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 0px;
+}
+.Team .DetailCards .CardBox {
+  width: calc(100% - 315px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px 10px 0;
+  border-radius: 15px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.Team .DetailCards.light .CardBox {
+  background-color: rgb(243, 243, 243);
+}
+.Team .DetailCards.dark .CardBox {
+  background-color: #0e101b;
+}
+.Team .DetailCards .CardBox::-webkit-scrollbar {
+  width: 8px;
+}
+.Team .DetailCards .CardBox::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.Team .DetailCards .CardBox::-webkit-scrollbar-thumb {
+  background-color: rgb(92, 92, 100);
+  border-radius: 10px;
+}
+.Team .DetailCards .CardBox .Card {
+  margin: 20px 30px;
+}
+.Team .imageSlider .col:nth-of-type(2) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(8) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(14) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(20) .sliderImgBox .profileCard {
+  background-color: rgb(0, 173, 43);
+  box-shadow: 0px 14px 34px 4px rgb(0, 173, 43, 0.54);
+}
+.Team .imageSlider .col:nth-of-type(3) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(9) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(15) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(21) .sliderImgBox .profileCard {
+  background-color: rgb(0, 109, 173);
+  box-shadow: 0px 14px 34px 4px rgb(0, 109, 173, 0.54);
+}
+.Team .imageSlider .col:nth-of-type(4) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(10) .sliderImgBox .profileCard,
+.Team.imageSlider .col:nth-of-type(16) .sliderImgBox .profileCard,
+.Team.imageSlider .col:nth-of-type(22) .sliderImgBox .profileCard {
+  background-color: rgb(95, 0, 173);
+  box-shadow: 0px 14px 34px 4px rgb(95, 0, 173, 0.54);
+}
+.Team .imageSlider .col:nth-of-type(5) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(11) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(17) .sliderImgBox .profileCard {
+  background-color: rgb(240, 68, 0);
+  box-shadow: 0px 14px 34px 4px rgb(240, 68, 0, 0.54);
+}
+.Team .imageSlider .col:nth-of-type(6) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(12) .sliderImgBox .profileCard,
+.Team .imageSlider .col:nth-of-type(18) .sliderImgBox .profileCard {
+  background-color: rgb(186, 0, 223);
+  box-shadow: 0px 14px 34px 4px rgb(186, 0, 223, 0.54);
+}
+.Team .Card:nth-of-type(2) .profileCard::before,
+.Team .Card:nth-of-type(8) .profileCard::before,
+.Team .Card:nth-of-type(14) .profileCard::before,
+.Team .Card:nth-of-type(20) .profileCard::before {
+  background-color: rgb(0, 173, 43);
+}
+.Team .Card:nth-of-type(3) .profileCard::before,
+.Team .Card:nth-of-type(9) .profileCard::before,
+.Team .Card:nth-of-type(15) .profileCard::before,
+.Team .Card:nth-of-type(21) .profileCard::before {
+  background-color: rgb(0, 109, 173);
+}
+.Team .Card:nth-of-type(4) .profileCard::before,
+.Team .Card:nth-of-type(10) .profileCard::before,
+.Team .Card:nth-of-type(16) .profileCard::before,
+.Team .Card:nth-of-type(22) .profileCard::before {
+  background-color: rgb(95, 0, 173);
+}
+.Team .Card:nth-of-type(5) .profileCard::before,
+.Team .Card:nth-of-type(11) .profileCard::before,
+.Team .Card:nth-of-type(17) .profileCard::before {
+  background-color: rgb(240, 68, 0);
+}
+.Team .Card:nth-of-type(6) .profileCard::before,
+.Team .Card:nth-of-type(12) .profileCard::before,
+.Team .Card:nth-of-type(18) .profileCard::before {
+  background-color: rgb(186, 0, 223);
+}
+@media screen and (max-width: 700px) {
+  .Team .FilterBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 130px;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    outline: none;
+    border: 2px solid rgb(255, 0, 203);
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+  .Team .DetailCards.light .FilterBtn {
+    color: #000;
+  }
+  .Team .DetailCards.dark .FilterBtn {
+    color: #fff;
+  }
+  .Team .FilterBtn:hover,
+  .FilterBtn:active {
+    color: #fff !important;
+    background: rgb(255, 0, 203);
+    background: linear-gradient(
+      164deg,
+      rgba(255, 0, 203, 1) 0%,
+      rgba(89, 29, 255, 1) 100%
+    );
+    border: 2px solid rgb(255, 0, 203, 0);
+  }
+  .Team .DetailCards {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  .Team .DetailCards.light,
+  .Team .DetailCards.dark {
+    background-color: transparent;
+  }
+  .Team .DetailCards .navbar {
+    width: 300px;
+    padding: 10px 0;
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+  }
+  .Team .DetailCards.light .navbar {
+    background-color: #008080;
+  }
+  .Team .DetailCards.dark .navbar {
+    background-color: #3c3c3c;
+  }
+  .Team .DetailCards .navbar::before {
+    left: 0px;
+    height: 100%;
+    border-radius: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 0, 203, 1) 0%,
+      rgba(89, 29, 255, 1) 100%
+    );
+  }
+  .Team .DetailCards .navbar::before {
+    background: linear-gradient(180deg, #e91e63 0%, #673ab7 100%);
+  }
+  .Team .DetailCards .navbar button {
+    color: #fff !important;
+  }
+  .Team .DetailCards.light .navbar #marker {
+    background: linear-gradient(90deg, #e91e63 0%, #673ab7 100%);
+    border-radius: 0;
+  }
+  .Team .DetailCards.dark .navbar #marker {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 0, 203, 1) 0%,
+      rgba(89, 29, 255, 1) 100%
+    );
+    border-radius: 0;
+  }
+  .Team .DetailCards .navbar #marker span {
+    display: none;
+  }
+  .Team .DetailCards .CardBox {
+    width: 100%;
+    margin: 0;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  .Team .DetailCards.light .CardBox,
+  .Team .DetailCards.dark .CardBox {
+    background-color: transparent;
+  }
+  .Team .DetailCards .CardBox .Card {
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Team .ContentBox {
+    padding: 100px 25px;
+    margin: 0;
+  }
+  .Team .ContentBox h1 {
+    line-height: 1.2em;
+    margin-bottom: 30px;
+  }
+  .Team .ContentBox p {
+    margin: 0 5px;
+  }
+  .Team .imageContainer {
+    height: 500px;
+    margin: 0;
+  }
+  .Team .imageContainer .sliderImgBox:hover .profileCard {
+    transform: scale(0.7) rotate(-45deg);
+  }
+}

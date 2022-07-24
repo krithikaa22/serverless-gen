@@ -1,0 +1,141 @@
+query me {
+  me {
+    id
+    name
+    shaastraID
+    email
+    mobile
+    college
+    department
+    address
+    city
+    state
+    registeredEvents {
+      id
+      name
+      pic
+      eventTimeFrom
+      eventTimeTo
+      registrationType
+      yourTeam {
+        id
+        name
+        members {
+          name
+          email
+        }
+      }
+    }
+  }
+}
+
+mutation editEvent($data: EditEventInput!, $id: String!) {
+  editEvent(data: $data, eventID: $id)
+}
+
+query getUsers($filter: GetUsersFilter!) {
+  getUsers(filter: $filter) {
+    count
+    users {
+      name
+      id
+      shaastraID
+      email
+      role
+      isVerified
+      verificationOTP
+      registeredEvents {
+        id
+        name
+        teamSize
+        vertical
+      }
+    }
+  }
+}
+query getEvents($filter: String!) {
+  getEvents(filter: $filter) {
+    events {
+      id
+      name
+      pic
+      vertical
+      description
+      requirements
+      platform
+      firstplace
+      secondplace
+      thirdplace
+      participation
+      registrationOpenTime
+      registrationCloseTime
+      eventTimeFrom
+      eventTimeTo
+      registrationType
+      teamSize
+      registrationfee
+    }
+  }
+}
+query getEvent($EventID: String!) {
+  getEvent(EventID: $EventID) {
+    id
+    name
+    vertical
+    description
+    requirements
+    pic
+    registrationfee
+    platform
+    firstplace
+    secondplace
+    thirdplace
+    participation
+    registrationOpenTime
+    registrationCloseTime
+    eventTimeFrom
+    eventTimeTo
+    registrationType
+    teamSize
+    earlybidoffer
+    registeredUserCount
+    registeredTeamCount
+    recordingUserCount
+    faqs {
+      id
+      answer
+      question
+    }
+    eventtimings {
+      id
+      name
+      time
+    }
+  }
+}
+
+query getUsersDataCSV {
+  getUsersDataCSV
+}
+query exportCSV($EventID: String!) {
+  exportCSV(EventID: $EventID)
+}
+
+query getChessDetailsCSV {
+  getChessDetailsCSV
+}
+
+query TShirtDetailsCSV {
+  TShirtDetailsCSV
+}
+query recordingUsersCSV($EventID: String!) {
+  recordingUsersCSV(EventID: $EventID)
+}
+
+query getPaidUsersCount {
+  getPaidUsersCount
+}
+
+query getAllRecordingUsersCount {
+    getAllRecordingUsersCount
+}

@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+.sponsBox1 .ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.sponsBox1 .ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.sponsBox1 .ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.sponsBox1 .ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.sponsBox1 .ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.sponsBox1 #photo {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.507);
+  border-radius: 4px;
+  margin-left: 10px auto;
+}
+.sponsBox1 #title1 {
+  font-size: 20px;
+  font-family: "Otomanopee One", sans-serif;
+}
+.sponsBox1 .tooltip #flip {
+  position: relative;
+  left: 0%;
+  height: 52px;
+  width: 190px;
+}
+.sponsBox1 #panel {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  max-width: 90%;
+  margin: 30px auto;
+}
+.sponsBox1 #about {
+  font-size: 50px;
+  font-weight: 700;
+}
+.sponsBox1 .aboutus{
+  display: flex;
+  justify-content: center;
+}
+.sponsBox1 .maintextspons{
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+}
+.sponsBox1 .tooltip {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+.sponsBox1 .boxx {
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 95%;
+  color: #777;
+  font-size: 22px;
+  font-weight: 800;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.sponsBox1 {
+  scroll-behavior: smooth;
+}
+.sponsBox1 #Nescafe{
+  position: relative;
+  width: 85%;
+}
+.sponsBox1 #YB{
+  width: 50%;
+  margin-top: 10px;
+}
+/* Tooltip text */
+.sponsBox1 #otherSponsors{
+  font-size: 23px;
+}
+.sponsBox1 #GF{
+  position: relative;
+  top: -10px;
+}
+.sponsBox1 .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #000000;
+}
+
+.sponsBox1 .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  min-height: 80px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: -23%;
+  // margin-top: 13px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.sponsBox1 .tooltiptext {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;;
+  background-size: 400% 400%;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  // color: #777;
+}
+
+@-webkit-keyframes back {
+  0% {
+    background-position: 0% 14%;
+  }
+  50% {
+    background-position: 100% 87%;
+  }
+  100% {
+    background-position: 0% 14%;
+  }
+}
+@-moz-keyframes back {
+  0% {
+    background-position: 0% 14%;
+  }
+  50% {
+    background-position: 100% 87%;
+  }
+  100% {
+    background-position: 0% 14%;
+  }
+}
+@keyframes back {
+  0% {
+    background-position: 0% 14%;
+  }
+  50% {
+    background-position: 100% 87%;
+  }
+  100% {
+    background-position: 0% 14%;
+  }
+}
+.sponsBox1 .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.sponsBox1 .img-responsive {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#Astra{
+  margin-top: -11px;
+}
+#foxmula{
+  margin-top: 14px;
+}
+@import "https://fonts.googleapis.com/css?family=Do+Hyeon";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@315&family=Ubuntu&display=swap");
+// $color-box-1: #381515;
+$color-box-2: #0f2c5e;
+$color-box-3: #27377c;
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@315&display=swap");
+
+.sponsBox1 #photo {
+  margin: 10px auto;
+}
+
+.sponsBox1 .card__collection {
+  position: relative;
+  display: block;
+  display: flex;
+  align-items: center;
+  // width: 80%;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.sponsBox1 .card__collection .cards {
+  width: 200px;
+  height: 170px;
+  display: block;
+  background-size: cover;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.sponsBox1 #surana {
+  position: relative;
+  // height: 200px;
+  top: 34px;
+  margin-bottom: 75px;
+  height: 120px;
+  width: 170px;
+}
+
+.sponsBox1 .cards--three {
+  position: relative;
+  z-index: 10;
+
+  &:hover {
+    .cards--three__rect-1 {
+      left: 10%;
+
+      .shadow-1 {
+        left: -20%;
+      }
+
+      .text {
+        color: rgb(31, 55, 160);
+        float: left;
+        font-size: 16px;
+        // font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Ubuntu", sans-serif;
+      }
+    }
+
+    .cards--three__rect-2 {
+      left: 60%;
+
+      &:before {
+        left: -100%;
+      }
+
+      &:after {
+        left: 80%;
+      }
+
+      .shadow-2 {
+        left: -10%;
+      }
+    }
+
+    .cards--three__circle {
+      transform: scale(1);
+
+      &:before {
+        transform: scale(0.9);
+      }
+    }
+
+    .cards--three__list {
+      li {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__rect-1 {
+    border-radius: 9px;
+
+    background: #fff;
+    width: 200px;
+    height: 110px;
+    transform: skewX(-20deg);
+    display: block;
+    position: absolute;
+    top: 73%;
+    opacity: 0.9;
+    left: -100%;
+    z-index: 8;
+    transition: all 0.3s ease-in;
+
+    p {
+      font-size: 20px;
+      color: #fff;
+      transform: skewX(20deg);
+      line-height: 6rem;
+    }
+
+    .shadow-1 {
+      border-radius: 9px;
+      background-image: linear-gradient(109.6deg, rgb(185, 216, 73) 11.2%, rgba(24, 138, 141, 1) 91.1%);
+      width: 230px;
+      height: 105px;
+      top: -20px;
+      display: block;
+      position: absolute;
+      left: -200%;
+      z-index: -1;
+      transition: all 0.3s ease-in;
+    }
+  }
+
+  &__rect-2 {
+    width: 100px;
+    height: 70px;
+    background: #fff;
+    position: absolute;
+    top: 65%;
+    left: 1000%;
+    opacity: 0.9;
+    transform: skewX(-20deg);
+    z-index: 8;
+    transition: all 0.3s ease-in;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 40px;
+      // background: linear-gradient(to bottom left,#1100ff,#14071d);
+      opacity: 1;
+      position: absolute;
+      left: 500%;
+      top: 10%;
+      transition: all 0.1s ease-in;
+    }
+
+    .shadow-2 {
+      border-top-left-radius: 9px;
+      background: linear-gradient(to bottom left, #215f00, #e4e4d9);
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: -10%;
+      left: 500%;
+      transition: all 0.3s ease-in;
+      transition-delay: 0.3s;
+    }
+  }
+}
+
+.sponsBox1 #titlemain {
+  font-size: 45px;
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: aitf 80s linear infinite;
+  font-family: "Exo", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap");
+@keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.sponsBox1 #www1 {
+  position: relative;
+  top: 68px;
+  left: 60px;
+  height: 40px;
+  width: 40px;
+}
+
+.sponsBox1 #www2 {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  top: 6px;
+  left: 135px;
+}
+
+.sponsBox1 #www3 {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  top: -55px;
+  // transform: translate(-50%,-50%);
+  left: 200px;
+}
+
+.sponsBox1 .card {
+  position: relative;
+  top: 50%;
+  // left: 50%;
+  margin: 100px;
+  height: 220px;
+  width: 333px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+.sponsBox1 .card:hover .card-front {
+  transform: rotateX(-180deg);
+}
+.sponsBox1 .card:hover .card-back {
+  transform: rotateX(0deg);
+}
+
+.sponsBox1 .card-front {
+  height: 100%;
+  width: 100%;
+  // background-image: url(https://99px.ru/sstorage/56/2013/12/image_563012130153328414049.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // background-color: rgb(236, 236, 236);
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.sponsBox1 .card-back {
+  height: 100%;background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  text-align: center;
+}
+.sponsBox1 .card-back h2 {
+  // margin: 60% auto 35% auto;
+  font-size: 26px;
+}
+.sponsBox1 .card-back h2 span {
+  font-size: 20px;
+}
+.sponsBox1 .card-back a {
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  line-height: 20px;
+}
+.sponsBox1 .card-back a:hover {
+  color: #000000;
+  // background-color: #fff;
+}
+
+.sponsBox1 #inno{
+  position: relative;
+  width: 278px;
+  top: 60px;
+}
+.sponsBox1 #mathworks{
+  position: relative;
+  top: 30%;
+}
+.sponsBox1 #kamal{
+  position: relative;
+  height: 97px;
+  width: 278px;
+  top: 56px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.sponsBox1 #mtx{
+  position: relative;
+  height: 84px;
+  width: 278px;
+  top: 55px;
+}
+
+.sponsBox1 #subex{
+  position: relative;
+  height: 70px;
+  width: 240px;
+  top: 70px;
+}
+
+.sponsBox1 #surana{
+  position: relative;
+  height: 150px;
+  width: 208px;
+  top: 10px;
+}
+
+.sponsBox1 #lt{
+  position: relative;
+  height: 140px;
+  width: 278px;
+  top: 33px;
+}
+.sponsBox1 #juspy{
+  position: relative;
+  top: 30px;
+}
+.sponsBox1 #MZ{
+  position: relative;
+  top: 20px;
+  width: 50%;
+}
+.sponsBox1 #BSC{
+  position: relative;
+  width: 45%;
+}
+.sponsBox1 #GOB{
+  position: relative;
+  top: -30%;
+}
+.sponsBox1 #BN{
+  position: relative;
+  top: 15px;
+}
+.sponsBox1 #acr{
+  position: relative;
+  width: 95%;
+  top: 38%;
+}
+.sponsBox1 #autodesk{
+  position: relative;
+  top: 35%;
+  // transform: translate(0%,50%);
+}
+.sponsBox1 #tata{
+  position: relative;
+  top: 14%;
+  width: 90%;
+}
+
+.sponsBox1 #mouser{
+  position: relative;
+  top: 28%;
+  width: 90%;
+}
+.sponsBox1 #wow{
+  position: relative;
+  width: 50%;
+  top: 10%;
+  right: 2%;
+}
+
+.sponsBox1 #Bs{
+  position: relative;
+  width: 97%;
+  top: 25%;
+}
+.sponsBox1 #AMD{
+  position: relative;
+  width: 80%;
+  top: 18%;
+}
+.sponsBox1 #binance{
+  position: relative;
+  top: 25%;
+  width: 90%;
+}
+.sponsBox1 #hpcl{
+  position: relative;
+  top: -18%;
+  width: 60%;
+}
+.sponsBox1 #ravi{
+  position: relative;
+  width: 74%;
+  top: 8%;
+}
+.sponsBox1 #sponsro{
+  font-size: 19px;
+  padding-top: 5px;
+  font-family: "Do Hyeon", sans-serif;
+  letter-spacing: 1px;
+}
+.sponsBox1 #sponsro1{
+  font-size: 26px;
+  // padding-top: 5px;
+  font-family: "Do Hyeon", sans-serif;
+  letter-spacing: 1px;
+}
+.sponsBox1 .flexx{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}

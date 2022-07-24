@@ -1,0 +1,107 @@
+.Speaker .Bg {
+  margin-top: 100px;
+  background: white;
+}
+.Speaker .content {
+  padding: 80px;
+  text-align: center;
+  
+}
+.Speaker h2 {
+  margin: 10px;
+}
+.Speaker .Spacing {
+  margin-top: 50px;
+}
+.Speaker img {
+  width: 300px;
+  height: 350px;
+  border-radius: 4px;
+  border-color: blue;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+/* /* /* /*   The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+
+.Speaker .flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 350px;
+  padding-left: 50px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.Speaker .flip-box-inner {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+
+
+/* Position the front and back side */
+.Speaker .flip-box-front
+ {
+  position: absolute;
+   top: 0;
+   left: 0;
+  
+  width: 100%;
+           
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 2s;
+  
+}
+
+.Speaker .flip-box-inner:hover .flip-box-front {
+  transform: rotateX(-180deg);
+}
+
+
+.Speaker .flip-box-back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  background-color: black;
+  height: 350px;
+  color: white;
+  align-content: center;
+  text-align: center;
+
+  
+ 
+  width: 100%;
+               
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+.Speaker .flip-box-back h3{
+  margin-top: 50%;
+}
+
+.Speaker .flip-box-inner:hover .flip-box-back {
+  transform: rotateX(0deg);
+}
+
+/* Style the front side (fallback if image is missing) */
+
+/* .flip-box-front {
+  background-color: #bbb;
+  color: black;
+} */
+
+/* Style the back side */
+
+/* .flip-box-back {
+  
+} */

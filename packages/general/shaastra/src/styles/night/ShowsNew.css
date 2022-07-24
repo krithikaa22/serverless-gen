@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/* .video-container-shows
+{
+    width: 100vw;
+    height: 66vh;
+    overflow: hidden;
+}
+#video-shows
+{
+    margin-left: -220px;
+} */
+#homeShowNew video 
+{
+    /* position: absolute;
+    clip: rect(0px,100px,66px,0px) !important; */
+    width: 100vw !important;
+    height: 83vh !important;
+    object-fit: cover;
+    /* -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  filter: opacity(90%); */
+    /* height: 66vh !important; */
+}
+
+.chakra-stack 
+{
+    padding-bottom: 0% !important;
+}
+.css-1mjzt8k>*:not(style)~*:not(style), .css-2ri6yo>*:not(style)~*:not(style)
+{
+    margin-top: 0% !important;
+}
+
+/* @media screen and (max-width: 600px)
+{
+    .shows-header 
+    {
+        padding-top: 8vw;
+    }
+} */
+
+@font-face {
+    font-family: horizonFont;
+    src: url("../../images/night/Horizon.ttf");
+  }
+
+  .shows-new-heading
+  {
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 0.75vw;
+    word-spacing: 0.5vw;
+  }
+
+.montserrat
+{
+    font-family: 'Montserrat' !important;
+}
+.reverb-swiper .swiper-slide img{
+    margin: auto !important;
+}
+.reverb-swiper .swiper-button-next, .reverb-swiper .swiper-button-prev
+{
+    color: white;
+}

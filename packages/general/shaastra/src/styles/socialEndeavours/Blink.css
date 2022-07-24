@@ -1,0 +1,190 @@
+/*blink*/
+.blink{
+    scroll-snap-align: start;
+    background-image: linear-gradient(90deg, transparent 50%, var(--blue-bg) 50%);
+    padding: 5rem 0;
+    margin: 5rem 0rem;
+}
+.blink > .sec-heading{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    /* color: var(--pink); */
+    animation: blink 1s ease infinite;
+}
+
+#blink .blue{
+    color: var(--pink);
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.blink-info{
+    position: relative;
+    margin: auto;
+    background-color: var(--pink-bg);
+    border-radius: 24px;
+    color: var(--brown);
+    font-weight: bolder;
+    width: 60%;
+    font-weight: 500;
+    padding: 4rem;
+    text-align: center;
+}
+.blink-info:hover{
+    color: var(--dblue);
+    transform: scale(1.10);
+    transition: all .5s ease;
+}
+
+#blink-image{
+    height: 100%;
+    width: 100%;
+}
+
+.blink-info-back{
+    background-color: var(--pink-bg);
+    padding: 4rem;
+    font-size: 1.5rem;
+    border-radius: 24px;
+    color: var(--dblue);
+    text-align: center;
+}
+.blink-info-back:hover{
+    color: var(--dblue);
+    transform: scale(1.10);
+    transition: all .5s ease;
+}
+.blink-info-light{
+    font-weight: bold;
+    background-color: var(--blue-bg);
+    padding: 4rem;
+    border-radius: 24px;
+    color: var(--dblue);
+    text-align: center;
+}
+.blink-info-dark{
+    font-weight: bold;
+    background-color: var(--dblue-bg);
+    padding: 4.4vw;
+    border-radius: 24px;
+    color: var(--blue);
+    text-align: center;
+}
+
+.blink-main-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+.blink-main-info > div{
+    width: 45%;
+}
+
+
+.blink-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.blink-stats .blink-info-back{
+    width: 50%;
+}
+
+@media screen and (max-width: 1050px)
+{
+    .blink-info{
+        margin-top: 3vw;
+        font-size: 3vw;
+        width: 90%;
+    }
+    .blink .sec-heading{
+        font-size: 20vw;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .blink-info-back{
+        font-size: 2vw;
+        padding: 2vw;
+    }
+    .blink-main-info{
+        font-size: 2vw;
+    }
+    .blink-info-dark, .blink-info-light{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 950px)
+{
+    .blink{
+        margin: 2rem 0;
+        margin-bottom: 2vw;
+    }
+    .blink .sec-heading{
+        font-size: 18vw;
+        width: 90%;
+        text-align: center;
+    }
+    #blink-image 
+    {
+        height: 20vh;
+        object-fit: cover;
+    }
+    .blink-info{
+        font-size: 4vw;
+        padding: 5vw;
+        width: 90%;
+        margin-top: 2rem;
+    }
+    .blink-main-info{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 ;
+        margin-top: 15vw;
+        row-gap: 2rem;
+        font-size: 5vw;
+        width: 100%;
+    }
+    .blink-main-info > div{
+        width: 100%;
+        padding: 20vw 4vw;
+    } 
+    .blink-info-dark, .blink-main-info > .blink-info-back{
+        border-radius: 0%;
+        text-align: center;
+    }
+    .blink-info-back{
+        padding: 4vw;
+        font-size: 4vw;
+    }
+    .blink-info-light, .blink-info-dark{
+        font-size: 4vw;
+        padding: 4vw;
+        border-radius: 24px;
+    }
+    .blink-info-light
+    {
+        background-color: #468caa;
+    }
+    .blink-info-dark
+    {
+        background-color: var(--dblue);
+    }
+}
+/* @media screen and (max-width: 600px)
+{
+    .blink-info-light, .blink-info-dark{
+        font-size: 4vw;
+        padding: 4vw;
+        border-radius: 24px;
+    }
+} */
